@@ -26,3 +26,31 @@ Loading: 0 packages loaded
     currently loading: main
 Loading: 0 packages loaded
     currently loading: main
+Loading: 0 packages loaded
+    currently loading: main
+Loading: 0 packages loaded
+    currently loading: main
+Loading: 0 packages loaded
+    currently loading: main
+INFO: Repository numpy_test_requirements instantiated at:
+  /Users/ajocard/Developments/logic/bm/numpy_test/WORKSPACE:17:12: in <toplevel>
+  /private/var/tmp/_bazel_ajocard/540f38b36a25b6b01d3f92498164cf3b/external/rules_python/python/pip.bzl:54:19: in pip_install
+Repository rule pip_repository defined at:
+  /private/var/tmp/_bazel_ajocard/540f38b36a25b6b01d3f92498164cf3b/external/rules_python/python/pip_install/pip_repository.bzl:168:33: in <toplevel>
+ERROR: An error occurred during the fetch of repository 'numpy_test_requirements':
+   Traceback (most recent call last):
+	File "/private/var/tmp/_bazel_ajocard/540f38b36a25b6b01d3f92498164cf3b/external/rules_python/python/pip_install/pip_repository.bzl", line 105, column 13, in _pip_repository_impl
+		fail("rules_python failed: %s (%s)" % (result.stdout, result.stderr))
+Error in fail: rules_python failed:  (Timed out)
+ERROR: Error fetching repository: Traceback (most recent call last):
+	File "/private/var/tmp/_bazel_ajocard/540f38b36a25b6b01d3f92498164cf3b/external/rules_python/python/pip_install/pip_repository.bzl", line 105, column 13, in _pip_repository_impl
+		fail("rules_python failed: %s (%s)" % (result.stdout, result.stderr))
+Error in fail: rules_python failed:  (Timed out)
+ERROR: Skipping '//main:main': no such package '@numpy_test_requirements//': rules_python failed:  (Timed out)
+WARNING: Target pattern parsing failed.
+ERROR: no such package '@numpy_test_requirements//': rules_python failed:  (Timed out)
+INFO: Elapsed time: 600.632s
+INFO: 0 processes.
+FAILED: Build did NOT complete successfully (0 packages loaded)
+ERROR: Build failed. Not running target
+FAILED: Build did NOT complete successfully (0 packages loaded)
