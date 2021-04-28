@@ -1,56 +1,11 @@
-Loading: 
-Loading: 0 packages loaded
-Loading: 0 packages loaded
-    currently loading: main
-Loading: 0 packages loaded
-    currently loading: main
-Loading: 0 packages loaded
-    currently loading: main
-Loading: 0 packages loaded
-    currently loading: main
-Loading: 0 packages loaded
-    currently loading: main
-Loading: 0 packages loaded
-    currently loading: main
-Loading: 0 packages loaded
-    currently loading: main
-Loading: 0 packages loaded
-    currently loading: main
-Loading: 0 packages loaded
-    currently loading: main
-Loading: 0 packages loaded
-    currently loading: main
-Loading: 0 packages loaded
-    currently loading: main
-Loading: 0 packages loaded
-    currently loading: main
-Loading: 0 packages loaded
-    currently loading: main
-Loading: 0 packages loaded
-    currently loading: main
-Loading: 0 packages loaded
-    currently loading: main
-Loading: 0 packages loaded
-    currently loading: main
-INFO: Repository numpy_test_requirements instantiated at:
-  /Users/ajocard/Developments/logic/bm/numpy_test/WORKSPACE:17:12: in <toplevel>
-  /private/var/tmp/_bazel_ajocard/540f38b36a25b6b01d3f92498164cf3b/external/rules_python/python/pip.bzl:54:19: in pip_install
-Repository rule pip_repository defined at:
-  /private/var/tmp/_bazel_ajocard/540f38b36a25b6b01d3f92498164cf3b/external/rules_python/python/pip_install/pip_repository.bzl:168:33: in <toplevel>
-ERROR: An error occurred during the fetch of repository 'numpy_test_requirements':
-   Traceback (most recent call last):
-	File "/private/var/tmp/_bazel_ajocard/540f38b36a25b6b01d3f92498164cf3b/external/rules_python/python/pip_install/pip_repository.bzl", line 105, column 13, in _pip_repository_impl
-		fail("rules_python failed: %s (%s)" % (result.stdout, result.stderr))
-Error in fail: rules_python failed:  (Timed out)
-ERROR: Error fetching repository: Traceback (most recent call last):
-	File "/private/var/tmp/_bazel_ajocard/540f38b36a25b6b01d3f92498164cf3b/external/rules_python/python/pip_install/pip_repository.bzl", line 105, column 13, in _pip_repository_impl
-		fail("rules_python failed: %s (%s)" % (result.stdout, result.stderr))
-Error in fail: rules_python failed:  (Timed out)
-ERROR: Skipping '//main:main': no such package '@numpy_test_requirements//': rules_python failed:  (Timed out)
-WARNING: Target pattern parsing failed.
-ERROR: no such package '@numpy_test_requirements//': rules_python failed:  (Timed out)
-INFO: Elapsed time: 600.632s
+DEBUG: Rule 'rules_python' indicated that a canonical reproducible form can be obtained by modifying arguments sha256 = "917a154c3890c1e8f21c070280926454637cd290162f4ee6174877ce3566cc8b"
+DEBUG: Repository rules_python instantiated at:
+  /Users/ajocard/Developments/logic/bm/numpy_test/WORKSPACE:8:13: in <toplevel>
+Repository rule http_archive defined at:
+  /private/var/tmp/_bazel_ajocard/540f38b36a25b6b01d3f92498164cf3b/external/bazel_tools/tools/build_defs/repo/http.bzl:336:31: in <toplevel>
+ERROR: /Users/ajocard/Developments/logic/bm/numpy_test/main/BUILD:6:10: no such package '@numpy_test_requirements//pypi__chardet': BUILD file not found in directory 'pypi__chardet' of external repository @numpy_test_requirements. Add a BUILD file to a directory to mark it as a package. and referenced by '//main:main'
+ERROR: Analysis of target '//main:main' failed; build aborted: Analysis failed
+INFO: Elapsed time: 14.545s
 INFO: 0 processes.
-FAILED: Build did NOT complete successfully (0 packages loaded)
-ERROR: Build failed. Not running target
-FAILED: Build did NOT complete successfully (0 packages loaded)
+FAILED: Build did NOT complete successfully (1 packages loaded, 0 targets configured)
+FAILED: Build did NOT complete successfully (1 packages loaded, 0 targets configured)
